@@ -16,7 +16,6 @@ export const Container = styled.div`
     align-items: center;
     cursor: pointer;
     background: linear-gradient(to right, #eee , #fff ,  white  );
-    margin-top: 45px;
 
 
     &:hover{
@@ -31,16 +30,10 @@ export const Container = styled.div`
     display: flex;
     gap: 6rem;
     margin-top: 7rem;
-    overflow-y: hidden;
-    overflow-x: auto;
     padding: 0 50px;
 
 
 
-
-    >div{
-      margin-bottom: 50px;
-    }
   }
 
   .right{

@@ -4,6 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction:column;
   gap: 5px;
+  cursor: pointer;
+ 
 `;
 
 export const Image =styled.img`
@@ -12,7 +14,7 @@ export const Image =styled.img`
 export const Title =styled.strong`
   font-size: 16px;
   line-height: 24px;
-
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.08);
   color: #161412;
 
 `  
@@ -32,3 +34,36 @@ export const Details =styled.p`
   font-style: italic;
 
 `
+
+export const PriceDetails = styled.div`
+    visibility: hidden ;
+    position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  40px   20px;
+  border-bottom: 2px solid black;
+
+  &.active{
+    visibility: visible ;
+    position: relative;
+
+  }
+
+`
+
+export const Price = styled.strong`
+
+
+
+
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161412;
+`
+
+
