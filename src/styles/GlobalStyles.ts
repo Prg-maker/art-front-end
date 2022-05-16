@@ -8,6 +8,9 @@ export default createGlobalStyle`
   }
   *,button , input{
     font-family: 'Inter', sans-serif;
+
+    overflow-y: hidden;
+
   }
   html , body ,#root{
     height:100vh;

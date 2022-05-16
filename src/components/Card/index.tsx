@@ -2,21 +2,21 @@ import {Container, Image , Title , Artist , Details, PriceDetails, Price } from 
 
 import ImgTest from '../../assets/Painting.png'
 import { Upload , ShoppingCart} from 'phosphor-react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-interface Props {
-  handleClick: ()=> void;
-  isOpenBuy: boolean
-}
 
-export function Card({
-  handleClick,
-  isOpenBuy
-}:Props){
+export function Card(){
 
+  const [isOpenBuy , setIsOpenBuy] = useState(false)
+
+  function ToggleIsOpenBuy(){
+    setIsOpenBuy(!isOpenBuy)
+  }
 
   return(
     <Container >
-      <div className='image' onClick={handleClick}>
+      <div className='image' onClick={ToggleIsOpenBuy}>
         <Image src={ImgTest} alt="ImgTest"/>
       </div>
       <Title>Wallowing Breeze</Title>
@@ -37,11 +37,13 @@ export function Card({
             }} size={45} weight="regular" />
 
 
-            <ShoppingCart style={{
-              background: '#161412',
-              color: 'white',
-              padding: 10
-            }} size={45} weight="regular" />
+            <Link to="/details">
+              <ShoppingCart style={{
+                background: '#161412',
+                color: 'white',
+                padding: 10
+              }} size={45} weight="regular" />
+            </Link>
 
           </div>
         </PriceDetails>

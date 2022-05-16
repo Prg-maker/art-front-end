@@ -9,7 +9,7 @@ export const Container = styled.div`
 `;
 
 export const Image =styled.img`
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 ` 
 export const Title =styled.strong`
   font-size: 16px;
@@ -36,8 +36,8 @@ export const Details =styled.p`
 `
 
 export const PriceDetails = styled.div`
-    visibility: hidden ;
-    position: absolute;
+  visibility: hidden ;
+  position: absolute;
 
   display: flex;
   justify-content: space-between;
@@ -48,9 +48,19 @@ export const PriceDetails = styled.div`
   &.active{
     visibility: visible ;
     position: relative;
-
+    animation-name: card;
+    animation-duration: 1s;
   }
-
+  @keyframes card {
+    from{
+      opacity: 0;
+      transform: translateY(-10%);
+    }
+    to{
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 `
 
 export const Price = styled.strong`

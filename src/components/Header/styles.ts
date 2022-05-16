@@ -10,8 +10,10 @@ export const Container = styled.header`
 `;
 
 export const Logo = styled.img`
-  height: 28px;
-  width: 154px;
+  min-height: 28px;
+  min-width: 154px;
+  max-height: 28px;
+  max-width: 154px;
   margin-right: 20px;
 `
 export const ListProducts = styled.ul`
@@ -19,13 +21,13 @@ export const ListProducts = styled.ul`
   gap: 50px;
   list-style: none;
 
-
   li:not(:last-child){
     cursor: pointer;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
     color: #161412;
+    overflow-x: hidden;
 
     &:hover , &.active{
       border-bottom: 2px solid #161412;

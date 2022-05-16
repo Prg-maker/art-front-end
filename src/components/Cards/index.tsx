@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 
 export function Cards(){
-  const [openBuy , setOpenBuy] = useState(false)
   
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -16,18 +15,19 @@ export function Cards(){
   ];
 
 
-  function handleClick(){
-    setOpenBuy(!openBuy)
-  }  
 
  
 
   return(
     <Container className='test'>
 
-      <Carousel  className='cards'  breakPoints={breakPoints}>
-        <Card  handleClick={handleClick} isOpenBuy={openBuy}/>
-        <Card  handleClick={handleClick} isOpenBuy={openBuy}/>
+      <Carousel   className='cards'  breakPoints={breakPoints}>
+        <Card   />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </Carousel>
     
 

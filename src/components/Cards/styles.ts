@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: relative;
 
-
   .left{
 
     position: absolute;
@@ -31,7 +30,6 @@ export const Container = styled.div`
     gap: 6rem;
     margin-top: 7rem;
     padding: 0 50px;
-
 
 
   }

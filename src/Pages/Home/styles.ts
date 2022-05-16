@@ -6,6 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Paintings = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,9 +26,8 @@ export const Paintings = styled.div`
 `  
 export const Title = styled.h1`
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2rem;
   line-height: 56px;
-
 
   color: #161412;
 

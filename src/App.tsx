@@ -8,6 +8,7 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
+import { DetailsArt } from './Pages/DetailsArt'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          <Route path='/details' element={<DetailsArt/>}/>
         </Routes>
       </BrowserRouter>
 
